@@ -18,8 +18,9 @@ module ActiveRecord
       #
       # ==== Examples
       #
-      #   # For the Post with id #1, reset the comments_count
-      #   Post.reset_counters(1, :comments)
+      #   # Reset the comments_count for the post with the id #123 by
+      #   # counting the number of associated comments.
+      #   Post.reset_counters(123, :comments)
       #
       #   # Like above, but also touch the +updated_at+ and/or +updated_on+
       #   # attributes.
